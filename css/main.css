@@ -11,14 +11,14 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  height: 200vh;
+  min-height: 200vh;
 }
 
 header {
   position: relative;
   display: block;
   overflow: auto;
-  background: url("../assets/headerBackground.jpg");
+  background: #666666 url("../assets/headerBackground.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ header h1, header h2 {
   text-transform: uppercase;
 }
 header h2 {
-  transition: color 228ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 200ms cubic-bezier(0.5, 0, 0.2, 1);
 }
 header p {
   font-family: "Roboto", sans-serif !important;
@@ -46,7 +46,7 @@ nav {
   left: 0;
   padding: 3em 0;
   width: 100%;
-  transition: all 348ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 400ms cubic-bezier(0.2, 0, 0.2, 1);
   z-index: 99;
 }
 nav:after {
@@ -58,7 +58,7 @@ nav:after {
   width: 100%;
   background: #fff;
   z-index: -1;
-  transition: all 348ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 400ms cubic-bezier(0.2, 0, 0.2, 1);
   box-shadow: 0 0.2em 3em #0000000f;
 }
 nav ul {
@@ -67,7 +67,7 @@ nav ul {
 }
 nav a {
   position: relative;
-  transition: color 228ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 200ms cubic-bezier(0.5, 0, 0.2, 1);
   text-decoration: none;
   padding: 0.6em 1.25em;
   margin: 0 0.5em 0 0;
@@ -86,7 +86,7 @@ nav a:after {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  transition: transform 278ms cubic-bezier(0, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.2, 0, 0.2, 1);
   z-index: 0;
 }
 nav a:hover:after {
@@ -108,6 +108,7 @@ nav a:hover:after {
 }
 
 .partners {
+  display: none;
   padding: 5em 0;
   text-align: center;
   color: #444444;
@@ -127,7 +128,7 @@ nav a:hover:after {
 .call {
   border: 2px solid #ffffffdd;
   border-radius: 2em;
-  transition: all 278ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.2, 0, 0.2, 1);
 }
 .call:hover {
   background: #fff;
@@ -153,6 +154,8 @@ nav a:hover:after {
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
   z-index: 2;
+  box-shadow: 0 0 0 0 #ffffff50;
+  transition: box-shadow 300ms cubic-bezier(0.2, 0, 0.2, 1);
 }
 .call_hero:after {
   content: "";
@@ -163,8 +166,11 @@ nav a:hover:after {
   height: 100%;
   background: #FF4E50;
   border-radius: 2em;
-  transition: width 228ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 300ms cubic-bezier(0.5, 0, 0.2, 1);
   z-index: -1;
+}
+.call_hero:hover {
+  box-shadow: 0 0 0 0.5em #ffffff50;
 }
 .call_hero:hover:after {
   left: 0;
