@@ -2,29 +2,63 @@
 
 .wrapper_main {
   position: relative;
-  max-width: 70em;
+  max-width: 80em;
   margin: 0 auto;
 }
 .wrapper_nav {
-  max-width: 70em;
+  max-width: 80em;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
 }
 .partners{
-  display: none;
   padding: 5em 0;
   text-align: center;
   color: $d_grey;
+  h2 {
+    font-size: 1.7em;
+  }
+  h3 {
+    margin: 1em auto;
+  }
+  p {
+    font-family: $robo;
+    font-size: 1.2em;
+    color: $grey;
+    // padding: 0 1em;
+  }
 }
 .partners_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1em;
-  margin: 2em auto;
-  div {
-    background: grey;
-    min-height: 15em;
+  grid-gap: 1.5em;
+  margin: 3em auto;
+  &:hover {
+    .partner {
+      opacity: .7;
+    }
+  }
+  .partner {
+    transition: opacity 300ms $inout;
+  }
+  .partner:hover {
+    opacity: 1 !important;
+  }
+  .profile {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    img {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      border-radius: 50%;
+    }
+    svg {
+      g {
+        fill: #fff;
+      }
+    }
   }
 }
