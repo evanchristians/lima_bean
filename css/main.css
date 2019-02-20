@@ -134,7 +134,7 @@ nav a:hover:after {
   opacity: 0.7;
 }
 .partners_grid .partner {
-  transition: opacity 300ms cubic-bezier(0.5, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.5, 0, 0.2, 1);
 }
 .partners_grid .partner:hover {
   opacity: 1 !important;
