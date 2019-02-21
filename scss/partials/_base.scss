@@ -94,6 +94,49 @@ nav {
   }
 }
 
+#nav_burger {
+  font-size: .9em;
+  background: #fff;
+  padding: .5em 1em;
+  color: $pink;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  display: none;
+  .wrapper_nav {
+    width: 100%;
+  }
+  h2 {
+    margin: 0;
+  }
+  a {
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
+    margin: .5em 0;
+    color: #aaa;
+    font-family: $robo;
+    padding: .25em 0; 
+    text-transform: uppercase;
+  }
+  ul {
+    transform: translateY(-5em);
+    opacity: 0;
+    text-align: center;
+    padding: 1em 3em;
+    max-width: 15em;
+    width: 100%;
+    position: absolute;
+    right: .5em;
+    top: calc(100% + .5em);
+    background: #fff;
+    border-bottom: 2px solid $pink;
+    transition: all 150ms $in;
+    border-radius: .2em;
+  }
+}
 footer {
   border-top: 2px solid $pink;
   padding: 4em 0;

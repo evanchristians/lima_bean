@@ -45,6 +45,9 @@
   nav {
     display: none;
   }
+  #nav_burger {
+    display: flex;
+  }
 }
 
 @media (max-width: 611px) {
