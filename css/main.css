@@ -463,5 +463,10 @@ footer {
     grid-column: span 1;
   }
 }
+@media (max-width: 430px) {
+  .partners_grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
