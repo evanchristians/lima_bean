@@ -352,7 +352,7 @@ footer {
 }
 .call_hero:focus {
   outline: none;
-  box-shadow: 0 0 0 0.4em #ffffff20;
+  box-shadow: 0 0 0 0.75em #ffffff50;
 }
 .call_hero:hover {
   color: #FF4E50;
@@ -379,6 +379,10 @@ footer {
 .call_alt:hover {
   background: #FF4E50;
   color: #fff;
+}
+.call_alt:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.75em #FF4E501f;
 }
 
 .icon {

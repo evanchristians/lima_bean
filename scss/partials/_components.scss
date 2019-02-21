@@ -59,7 +59,7 @@
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 .4em #ffffff20;
+    box-shadow: 0 0 0 .75em #ffffff50;
   }
   &:hover {
     color: $pink;
@@ -86,6 +86,10 @@
   &:hover {
     background: $pink;
     color: #fff;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 .75em $pink_20;
   }
 }
 
