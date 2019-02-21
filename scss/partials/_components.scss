@@ -33,7 +33,7 @@
 .call_hero {
   cursor: pointer;
   position: relative;
-  background: $pink_80;
+  background: $pink;
   border-radius: 2em;
   padding: .75em 2em;
   margin-top: .9em;
@@ -43,8 +43,8 @@
   font-family: $mont;
   overflow: hidden;
   z-index: 2;
-  box-shadow: 0 0 0 0 #ffffff50;
-  transition: box-shadow 200ms $out;
+  box-shadow: 0 0 0 0 #ffffff20;
+  transition: all 300ms $out;
   &:after {
     content: '';
     position: absolute;
@@ -52,13 +52,14 @@
     top: 0;
     width: 0;
     height: 100%;
-    background: $pink;
+    background: #fff;
     border-radius: 2em;
-    transition: width 200ms $inout;
+    transition: width 300ms $inout;
     z-index: -1;
   }
   &:hover {
-    box-shadow: 0 0 0 .25em #ffffff50;
+    color: $pink;
+    box-shadow: 0 0 0 .4em #ffffff20;
     &:after {
       left: 0;
       width: 100%;
@@ -147,6 +148,6 @@
     transition: transform 200ms $inout;
   }
   &:hover:after {
-    transform: translate(-50%, -50%) scale(2.5);
+    transform: translate(-50%, -50%) scale(2);
   }
 }
