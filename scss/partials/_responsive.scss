@@ -23,13 +23,13 @@
 
 @media (max-width: 800px) {
   body {
-    font-size: 12px;
+    font-size: 11px;
   }
   header h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   .hero_text p {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
   .footer_grid {
     grid-template-columns: repeat(3, 1fr);
@@ -55,7 +55,7 @@
     display: flex;
   }
   .call_hero {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
@@ -64,7 +64,6 @@
 @media (max-width: 611px) {
   .masonry_grid {
     grid-template-columns: 1fr;
-  
   }
   .footer_grid {
     grid-template-columns: repeat(2, 1fr);
