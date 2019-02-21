@@ -96,7 +96,7 @@ nav a:hover:after {
 }
 
 #nav_burger {
-  font-size: 0.9em;
+  font-size: 1.1em;
   background: #fff;
   padding: 0.8em 1em;
   color: #FF4E50;
@@ -469,10 +469,6 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  body {
-    font-size: 12px;
-  }
-
   .masonry_grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -492,12 +488,16 @@ footer {
   }
 }
 @media (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+
   header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
   .hero_text p {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 
   .footer_grid {
@@ -509,8 +509,7 @@ footer {
     text-align: center;
     grid-column: span 3;
   }
-}
-@media (max-width: 780px) {
+
   nav {
     display: none;
     z-index: -999;
@@ -525,6 +524,10 @@ footer {
 
   #nav_burger {
     display: flex;
+  }
+
+  .call_hero {
+    font-size: 1.2em;
   }
 }
 @media (max-width: 611px) {

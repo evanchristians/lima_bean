@@ -27,6 +27,8 @@ window.addEventListener("scroll", function(){
   // HEADER BACKGROUND PARALLAX
   if (window.innerWidth > 780) {
     header.style.backgroundPositionY = Math.floor(offset * .3) + "px";
+  } else {
+    header.style.backgroundPositionY = "0px";
   }
 
 })
