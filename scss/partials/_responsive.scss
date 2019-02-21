@@ -7,6 +7,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 870px) {
   .partners_grid {
     grid-template-columns: repeat(2, 1fr);
@@ -22,6 +23,7 @@
     }
   }
 }
+
 @media (max-width: 800px) {
   header h1 {
     font-size: 3em;
@@ -38,6 +40,13 @@
     grid-column: span 3;
   }
 }
+
+@media (max-width: 780px) {
+  nav {
+    display: none;
+  }
+}
+
 @media (max-width: 611px) {
   .masonry_grid {
     grid-template-columns: 1fr;

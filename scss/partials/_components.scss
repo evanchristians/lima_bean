@@ -57,9 +57,12 @@
     transition: width 300ms $inout;
     z-index: -1;
   }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 .4em #ffffff20;
+  }
   &:hover {
     color: $pink;
-    box-shadow: 0 0 0 .4em #ffffff20;
     &:after {
       left: 0;
       width: 100%;
