@@ -59,10 +59,10 @@
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 .75em #ffffff50;
   }
   &:hover {
     color: $pink;
+    box-shadow: 0 0 0 .75em #ffffff50;
     &:after {
       left: 0;
       width: 100%;
@@ -86,10 +86,10 @@
   &:hover {
     background: $pink;
     color: #fff;
+    box-shadow: 0 0 0 .75em $pink_20;
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 .75em $pink_20;
   }
 }
 
@@ -136,25 +136,8 @@
   font-size: 1.5em;
 }
 
-.view_more {
-  border-radius: 2em;
-  position: relative;
-  width: fit-content;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: $pink_20;
-    border-radius: 50%;
-    width: 1em;
-    height: 1em;
-    transition: transform 200ms $inout;
-  }
-  &:hover:after {
-    transform: translate(-50%, -50%) scale(2);
-  }
+.view_more:after {
+  background: $pink;
 }
 
 .burger_button {
@@ -185,4 +168,10 @@
   opacity: 1 !important;
   transition: all 300ms $out_s !important;
   z-index: 10;
+}
+.contact a {
+  cursor: auto;
+  &::after {
+    content: none;
+  }
 }
