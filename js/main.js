@@ -13,5 +13,5 @@ window.addEventListener("scroll", function(){
 
   // HEADER BACKGROUND PARALLAX
 
-  header.style.backgroundPositionY = (offset * .4) + "px";
+  header.style.backgroundPositionY = Math.floor(offset * .3) + "px";
 })
