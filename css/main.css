@@ -98,7 +98,7 @@ nav a:hover:after {
 #nav_burger {
   font-size: 0.9em;
   background: #fff;
-  padding: 0.5em 1em;
+  padding: 0.8em 1em;
   color: #FF4E50;
   position: fixed;
   top: 0;
@@ -511,6 +511,7 @@ footer {
 @media (max-width: 780px) {
   nav {
     display: none;
+    z-index: -999;
   }
 
   #nav_burger {
