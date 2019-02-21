@@ -135,6 +135,7 @@ nav {
     border-bottom: 2px solid $pink;
     transition: all 150ms $in;
     border-radius: .2em;
+    z-index: -99;
   }
 }
 footer {

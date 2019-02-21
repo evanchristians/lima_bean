@@ -176,4 +176,5 @@
   transform: translateY(0) !important;
   opacity: 1 !important;
   transition: all 300ms $out !important;
+  z-index: 10;
 }
