@@ -10,26 +10,26 @@ burgBtn.addEventListener("click", function(){
   }, 5)
   burgBtn.style.opacity = "0";
   burgBtnAlt.style.display = "flex";
-  burgBtnAlt.style.opacity = "1";
-  burgBtnAlt.style.zIndex = "-1";
+  burgBtnAlt.style.opacity = "2";
+  burgBtnAlt.style.zIndex = "1";
   setTimeout(function(){
     burgBtn.style.display = "none";
-    burgBtnAlt.style.zIndex = "1";
+    burgBtnAlt.style.zIndex = "2";
   }, 300);
 })
 burgBtnAlt.addEventListener("click", function(){
   document.getElementById('burger_items').classList.remove("shown")
   burgBtnAlt.style.opacity = "0";
   burgBtn.style.display = "flex";
-  burgBtn.style.opacity = "1";
-  burgBtn.style.zIndex = "-1";
+  burgBtn.style.opacity = "2";
+  burgBtn.style.zIndex = "1";
   setTimeout(function(){
     burgBtnAlt.style.display = "none";
-    burgBtn.style.zIndex = "1";
-  }, 300);
+    burgBtn.style.zIndex = "2";
+  }, 310);
   setTimeout(function() {
-    document.getElementById('burger_items').style.display = "none";
-  }, 150);
+    // document.getElementById('burger_items').style.display = "none";
+  }, 160);
 })
 
 window.addEventListener("scroll", function(){

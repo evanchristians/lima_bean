@@ -94,47 +94,55 @@ nav {
 }
 
 #nav_burger {
-  font-size: 1em;
+  font-size: 1.2em;
   background: #fff;
-  padding: .8em 1em;
   color: $pink;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 10;
   display: none;
   .wrapper_nav {
+    padding: 0;
+    display: block;
     width: 100%;
   }
   h2 {
     margin: 0;
   }
   a {
-    font-size: 1.2em;
+    font-size: 1.15em;
     text-decoration: none;
     display: block;
-    margin: .5em 0;
+    width: 100%;
+    margin: 0;
     color: #aaa;
     font-family: $robo;
     padding: .25em 0; 
     text-transform: uppercase;
+    border-bottom: 1px solid #efefef;
+    z-index: -1 !important;
+    &:hover {
+      background: #efefef;
+    }
   }
   ul {
-    transform: translateY(-5em);
-    opacity: 0;
+    font-size: .9em;
+    transform: translateY(-120%);
     text-align: center;
-    padding: 1em 3em;
-    max-width: 15em;
+    padding: 1em 0;
+    max-width: 50em;
     width: 100%;
     position: absolute;
-    right: .5em;
-    top: calc(100% + .5em);
+    right: 0;
+    top: calc(100%);
     background: #fff;
     border-bottom: 2px solid $pink;
     transition: all 100ms $in;
     border-radius: .2em;
-    z-index: -99;
+    box-shadow: 0 -1em 0 0 #fff;
+    z-index: -2 !important;
   }
 }
 footer {
