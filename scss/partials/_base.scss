@@ -94,7 +94,7 @@ nav {
 }
 
 #nav_burger {
-  font-size: 1.2em;
+  font-size: 1.15em;
   background: #fff;
   color: $pink;
   position: fixed;
@@ -112,14 +112,14 @@ nav {
     margin: 0;
   }
   a {
-    font-size: 1.15em;
+    font-size: 1.2em;
     text-decoration: none;
     display: block;
     width: 100%;
     margin: 0;
     color: #aaa;
     font-family: $robo;
-    padding: .25em 0; 
+    padding: .5em 0; 
     text-transform: uppercase;
     border-bottom: 1px solid #efefef;
     z-index: -1 !important;

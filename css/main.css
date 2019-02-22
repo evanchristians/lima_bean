@@ -97,7 +97,7 @@ nav a:hover:after {
 }
 
 #nav_burger {
-  font-size: 1.2em;
+  font-size: 1.15em;
   background: #fff;
   color: #FF4E50;
   position: fixed;
@@ -116,14 +116,14 @@ nav a:hover:after {
   margin: 0;
 }
 #nav_burger a {
-  font-size: 1.15em;
+  font-size: 1.2em;
   text-decoration: none;
   display: block;
   width: 100%;
   margin: 0;
   color: #aaa;
   font-family: "Roboto", sans-serif;
-  padding: 0.25em 0;
+  padding: 0.5em 0;
   text-transform: uppercase;
   border-bottom: 1px solid #efefef;
   z-index: -1 !important;
